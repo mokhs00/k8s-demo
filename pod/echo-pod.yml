@@ -8,7 +8,7 @@ spec:
   containers:
     - name: app
       image: ghcr.io/subicura/echo:v1
-      livenessProbe:
+      readinessProbe:
         httpGet:
           path: /not/exist
           port: 8080
