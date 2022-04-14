@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: counter-np
@@ -7,7 +7,7 @@ spec:
   ports:
     - port: 3000
       protocol: TCP
-      nodePort: 21000
+      nodePort: 30001
   selector:
     app: counter
     tire: app
